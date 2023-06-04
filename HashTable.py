@@ -40,7 +40,7 @@ class HashTable:
                 return k[1]
             return None
 
-    # Lookup a value in the HashTable
+    # Remove a value in the HashTable
     def remove(self, key):
         # uses the modulus of the integer key to find the index (bucket) in the array
         bucket = hash(key) % len(self.table)
